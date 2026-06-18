@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — GUIDE-AI</title>
+  <meta name="description" content="Learn about the GUIDE-AI project — its background, scientific objectives, and technical approach to LLM-based clinical guideline navigation.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar-inner">
+        <a class="navbar-brand" href="index.html" aria-label="GUIDE-AI — home">
+          <img src="assets/images/logo.png" alt="" width="36" height="36" aria-hidden="true">
+          GUIDE<span class="brand-ai">-AI</span>
+        </a>
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-menu" id="nav-menu" role="list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link active" href="about.html">About</a>
+            <ul class="dropdown-menu" role="list">
+              <li><a href="#background">Background</a></li>
+              <li><a href="#objectives">Objectives</a></li>
+              <li><a href="#approach">Approach</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="work-packages.html">Work Packages</a></li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="consortium.html">Consortium</a>
+            <ul class="dropdown-menu" role="list">
+              <li><a href="consortium.html#partners">Partners</a></li>
+              <li><a href="consortium.html#governance">Governance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="results.html">Results</a>
+            <ul class="dropdown-menu" role="list">
+              <li><a href="results.html#publications">Publications</a></li>
+              <li><a href="results.html#deliverables">Deliverables</a></li>
+              <li><a href="results.html#news">News</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- ── Page header ───────────────────────────────────────────── -->
+  <div class="page-header">
+    <div class="container">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">About</li>
+        </ol>
+      </nav>
+      <h1>About GUIDE-AI</h1>
+      <p>Understanding the challenge, the project, and the scientific approach behind AI-powered guideline navigation.</p>
+    </div>
+  </div>
+
+  <!-- ── Background ────────────────────────────────────────────── -->
+  <section class="section" id="background" aria-labelledby="background-heading">
+    <div class="container">
+      <div class="grid-2" style="gap:4rem; align-items:center;">
+        <div>
+          <span class="section-label">Background</span>
+          <h2 class="section-title" id="background-heading">The problem with clinical guidelines</h2>
+          <p style="color:var(--muted); margin-bottom:1rem; line-height:1.75;">
+            Clinical practice guidelines (CPGs) represent the gold standard of evidence-based medicine.
+            Produced by leading professional societies — ESC, KDIGO, GOLD, GINA — they synthesise
+            thousands of studies into graded recommendations designed to improve patient outcomes.
+          </p>
+          <p style="color:var(--muted); margin-bottom:1rem; line-height:1.75;">
+            Yet applying them in practice is far from straightforward. A single patient with heart failure,
+            chronic kidney disease, and COPD is served by three separate guideline documents running to
+            hundreds of pages each. No single guideline addresses the intersection. Clinicians must
+            synthesise this complexity mentally, in real time, under pressure.
+          </p>
+          <p style="color:var(--muted); line-height:1.75;">
+            The result: significant variation in guideline adherence, avoidable adverse events, and
+            inequalities in access to evidence-based care — particularly outside specialist centres.
+          </p>
+        </div>
+        <div>
+          <div class="card" style="border-left:4px solid var(--accent);">
+            <h3 style="margin-bottom:1.25rem;">Project at a Glance</h3>
+            <table style="width:100%;font-size:.9rem;">
+              <tbody>
+                <tr><td style="color:var(--muted);padding:.5rem 0;border-bottom:1px solid var(--border);width:45%;">Full name</td><td style="padding:.5rem 0;border-bottom:1px solid var(--border);font-weight:600;">GUIDE-AI</td></tr>
+                <tr><td style="color:var(--muted);padding:.5rem 0;border-bottom:1px solid var(--border);">Funder</td><td style="padding:.5rem 0;border-bottom:1px solid var(--border);">IHI Joint Undertaking</td></tr>
+                <tr><td style="color:var(--muted);padding:.5rem 0;border-bottom:1px solid var(--border);">Call</td><td style="padding:.5rem 0;border-bottom:1px solid var(--border);">IHI Call 9</td></tr>
+                <tr><td style="color:var(--muted);padding:.5rem 0;border-bottom:1px solid var(--border);">Grant No.</td><td style="padding:.5rem 0;border-bottom:1px solid var(--border);">101253015</td></tr>
+                <!-- TODO: Update start/end dates and budget -->
+                <tr><td style="color:var(--muted);padding:.5rem 0;border-bottom:1px solid var(--border);">Duration</td><td style="padding:.5rem 0;border-bottom:1px solid var(--border);">2025 – 2029 (4 years)</td></tr>
+                <tr><td style="color:var(--muted);padding:.5rem 0;border-bottom:1px solid var(--border);">Disease areas</td><td style="padding:.5rem 0;border-bottom:1px solid var(--border);">HF · CKD · COPD · Asthma · IBD</td></tr>
+                <tr><td style="color:var(--muted);padding:.5rem 0;">Status</td><td style="padding:.5rem 0;"><span class="tag tag-teal">Active</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Objectives ────────────────────────────────────────────── -->
+  <section class="section section-light" id="objectives" aria-labelledby="objectives-heading">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="section-label">What We Aim to Achieve</span>
+        <h2 class="section-title" id="objectives-heading">Project Objectives</h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          GUIDE-AI targets five interconnected objectives spanning technology development, clinical translation, and scientific dissemination.
+        </p>
+      </div>
+      <div class="grid-2" style="gap:1.5rem;">
+        <div class="card aos">
+          <div style="display:flex;gap:1rem;align-items:flex-start;">
+            <div style="flex-shrink:0;width:36px;height:36px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;">1</div>
+            <div>
+              <h3>Build validated Guideline Navigators</h3>
+              <p>Develop and benchmark LLM-based Guideline Navigators for heart failure, CKD, COPD, asthma, and IBD — capable of answering free-text clinical questions with evidence-graded, traceable responses.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card aos aos-delay-1">
+          <div style="display:flex;gap:1rem;align-items:flex-start;">
+            <div style="flex-shrink:0;width:36px;height:36px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;">2</div>
+            <div>
+              <h3>Enable cross-disease reasoning</h3>
+              <p>Create an ontological framework that allows the Guideline Navigator to handle patients with multiple comorbidities, integrating recommendations from different disease-specific guidelines.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card aos">
+          <div style="display:flex;gap:1rem;align-items:flex-start;">
+            <div style="flex-shrink:0;width:36px;height:36px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;">3</div>
+            <div>
+              <h3>Demonstrate clinical safety and effectiveness</h3>
+              <p>Prospectively evaluate Guideline Navigators in real clinical workflows at multiple EU sites, measuring impact on guideline adherence, clinical decision quality, and clinician efficiency.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card aos aos-delay-1">
+          <div style="display:flex;gap:1rem;align-items:flex-start;">
+            <div style="flex-shrink:0;width:36px;height:36px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;">4</div>
+            <div>
+              <h3>Address ethics, safety, and regulation</h3>
+              <p>Develop a rigorous framework for AI safety in clinical guideline applications — addressing hallucination risk, bias, explainability requirements, and the EU AI Act classification of GUIDE-AI tools.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card aos" style="grid-column: 1 / -1;">
+          <div style="display:flex;gap:1rem;align-items:flex-start;">
+            <div style="flex-shrink:0;width:36px;height:36px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;">5</div>
+            <div>
+              <h3>Maximise scientific and societal impact</h3>
+              <p>Publish findings in open-access journals, share validated benchmarks and datasets, engage patient organisations and policymakers, and establish a sustainability pathway for the Guideline Navigator beyond the project lifetime.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Approach ──────────────────────────────────────────────── -->
+  <section class="section" id="approach" aria-labelledby="approach-heading">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="section-label">Scientific &amp; Technical Approach</span>
+        <h2 class="section-title" id="approach-heading">How GUIDE-AI works</h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          A four-layer architecture connects clinical knowledge, AI reasoning, safety assurance, and clinical integration.
+        </p>
+      </div>
+
+      <div class="timeline mt-xl">
+        <div class="timeline-item">
+          <span class="timeline-date">Layer 1</span>
+          <h3>Guideline Knowledge Base</h3>
+          <p>Clinical practice guidelines from ESC, KDIGO, GOLD, GINA, and ECCO are systematically curated, structured, and annotated. Recommendations are tagged with evidence grades, population descriptors, and comorbidity flags.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">Layer 2</span>
+          <h3>LLM Adaptation &amp; Alignment</h3>
+          <p>Open-weight and proprietary LLMs are fine-tuned using supervised learning and reinforcement learning from human feedback (RLHF) on clinical question-answer pairs grounded in guideline content. Hallucination detection and retrieval-augmented generation (RAG) ensure answer fidelity.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">Layer 3</span>
+          <h3>Safety &amp; Explainability Framework</h3>
+          <p>Every model output is evaluated by an automated safety layer that checks source traceability, detects conflicting recommendations, and applies uncertainty quantification. Clinician-readable explanations accompany each answer.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">Layer 4</span>
+          <h3>Clinical Integration &amp; Evaluation</h3>
+          <p>Guideline Navigators are deployed in Electronic Health Record (EHR) environments at partner clinical sites. Prospective studies measure adherence outcomes, clinician trust, and workflow integration quality.</p>
+        </div>
+      </div>
+
+      <div class="alert alert-info mt-xl">
+        <strong>IHI Funding Acknowledgement:</strong> GUIDE-AI has received funding from the Innovative Health Initiative Joint Undertaking (IHI JU) under Grant Agreement No. 101253015. The IHI JU receives support from the European Union's Horizon Europe research and innovation programme and EFPIA.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="navbar-brand" href="index.html" aria-label="GUIDE-AI — home">
+          <img src="assets/images/logo.png" alt="" width="30" height="30" aria-hidden="true">
+          GUIDE<span class="brand-ai">-AI</span>
+        </a>
+        <p>AI-powered guideline navigators for chronic disease management. An IHI JU-funded European research project (Grant No. 101253015).</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work-packages.html">Work Packages</a></li>
+          <li><a href="consortium.html">Consortium</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Outputs</h4>
+        <ul>
+          <li><a href="results.html#publications">Publications</a></li>
+          <li><a href="results.html#deliverables">Deliverables</a></li>
+          <li><a href="results.html#news">News</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://bsky.app" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-eu-bar">
+    <div class="container">
+      <div class="footer-eu-inner">
+        <div class="footer-eu-logos">
+          <img src="assets/images/ihi-logo.svg" alt="IHI Joint Undertaking" height="38">
+          <img src="assets/images/eu-flag.svg" alt="European Union" height="32">
+        </div>
+        <p class="footer-eu-text">
+          <strong>GUIDE-AI</strong> is funded by the Innovative Health Initiative Joint Undertaking (IHI JU) under Grant Agreement No.&nbsp;<strong>101253015</strong>.
+          The JU receives support from the European Union's Horizon Europe research and innovation programme and EFPIA.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2025 GUIDE-AI Consortium — IHI Call 9 · Grant No. 101253015</span>
+      <span><a href="privacy.html">Privacy Policy</a> · <a href="privacy.html#cookies">Cookie Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

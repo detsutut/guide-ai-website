@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDE-AI — AI-powered guidance for chronic disease management</title>
+  <meta name="description" content="GUIDE-AI develops LLM-based Guideline Navigators to support clinical decision-making in heart failure, chronic kidney disease, COPD, and asthma. An IHI JU-funded European research project.">
+  <meta property="og:title" content="GUIDE-AI">
+  <meta property="og:description" content="AI-powered guideline navigators for chronic disease management.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- ═══════════════════════════════════════════════════════ NAV -->
+<header>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar-inner">
+        <a class="navbar-brand" href="index.html" aria-label="GUIDE-AI — home">
+          <img src="assets/images/logo.png" alt="" width="36" height="36" aria-hidden="true">
+          GUIDE<span class="brand-ai">-AI</span>
+        </a>
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-menu" id="nav-menu" role="list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="about.html">About</a>
+            <ul class="dropdown-menu" role="list">
+              <li><a href="about.html#background">Background</a></li>
+              <li><a href="about.html#objectives">Objectives</a></li>
+              <li><a href="about.html#approach">Approach</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="work-packages.html">Work Packages</a></li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="consortium.html">Consortium</a>
+            <ul class="dropdown-menu" role="list">
+              <li><a href="consortium.html#partners">Partners</a></li>
+              <li><a href="consortium.html#governance">Governance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="results.html">Results</a>
+            <ul class="dropdown-menu" role="list">
+              <li><a href="results.html#publications">Publications</a></li>
+              <li><a href="results.html#deliverables">Deliverables</a></li>
+              <li><a href="results.html#news">News</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════ MAIN -->
+<main id="main-content">
+
+  <!-- ── Hero ──────────────────────────────────────────────────── -->
+  <section class="hero" aria-label="Project overview">
+    <div class="container">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">IHI Call 9 · Grant Agreement No. 101253015</span>
+        <h1>
+          <em>AI-powered guidance</em> for chronic disease management
+        </h1>
+        <p class="hero-lead">
+          GUIDE-AI develops intelligent Guideline Navigators — large language model-based tools that
+          help clinicians translate complex clinical guidelines into actionable, patient-specific recommendations
+          in heart failure, CKD, COPD, asthma, and IBD.
+        </p>
+        <div class="hero-actions">
+          <a href="about.html" class="btn btn-primary">Learn about the project</a>
+          <a href="results.html#news" class="btn btn-outline-white">Latest news</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats bar ─────────────────────────────────────────────── -->
+  <section class="stats-bar" aria-label="Project at a glance">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- TODO: Update partner count when consortium is finalised -->
+        <div class="stat-item">
+          <span class="stat-number" data-target="24" data-suffix="+">24+</span>
+          <span class="stat-label">Consortium Partners</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">5</span>
+          <span class="stat-label">Target Disease Areas</span>
+        </div>
+        <!-- TODO: Update country count -->
+        <div class="stat-item">
+          <span class="stat-number" data-target="12">12</span>
+          <span class="stat-label">European Countries</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="4">4</span>
+          <span class="stat-label">Year Project (2025–2029)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Mission ───────────────────────────────────────────────── -->
+  <section class="section" aria-labelledby="mission-heading">
+    <div class="container text-center">
+      <span class="section-label">Our Mission</span>
+      <h2 class="section-title" id="mission-heading">Bridging the gap between guidelines and bedside care</h2>
+      <p class="section-subtitle" style="margin: 0 auto 3rem;">
+        Clinical practice guidelines summarise the best available evidence — yet applying them to individual patients
+        with multiple chronic conditions remains a complex, time-consuming challenge.
+        GUIDE-AI makes guideline-based decision support fast, reliable, and explainable.
+      </p>
+      <div class="grid-3">
+        <div class="card aos">
+          <div class="card-icon card-icon-blue" aria-hidden="true">🧠</div>
+          <h3>Large Language Models</h3>
+          <p>We fine-tune and align state-of-the-art LLMs on curated clinical guideline corpora to enable natural-language guideline query and reasoning.</p>
+        </div>
+        <div class="card aos aos-delay-1">
+          <div class="card-icon card-icon-teal" aria-hidden="true">🏥</div>
+          <h3>Clinical Integration</h3>
+          <p>Guideline Navigators are validated in real clinical workflows across multiple EU health systems, ensuring safety, usability, and clinical relevance.</p>
+        </div>
+        <div class="card aos aos-delay-2">
+          <div class="card-icon card-icon-success" aria-hidden="true">🔍</div>
+          <h3>Explainable &amp; Safe</h3>
+          <p>Every recommendation is traceable to its source guideline. We rigorously assess AI safety, hallucination risk, and regulatory compliance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Problem / Solution ────────────────────────────────────── -->
+  <section class="section section-light" aria-labelledby="ps-heading">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="section-label">The Challenge &amp; Our Response</span>
+        <h2 class="section-title" id="ps-heading">From complex guidelines to clinical action</h2>
+      </div>
+      <div class="ps-grid">
+        <div class="ps-block problem">
+          <h3>⚠ The Clinical Challenge</h3>
+          <ul>
+            <li>Clinical guidelines run to hundreds of pages and are updated frequently, making it impossible for busy clinicians to stay current</li>
+            <li>Patients with multiple comorbidities fall between guideline silos — no single document addresses their full complexity</li>
+            <li>Existing clinical decision support tools are rigid, keyword-based, and unable to handle natural clinical questions</li>
+            <li>Guideline adherence in heart failure, CKD, COPD, and asthma remains suboptimal, leading to avoidable hospitalisations</li>
+            <li>Limited access to guideline expertise in primary care and underserved settings widens health inequalities</li>
+          </ul>
+        </div>
+        <div class="ps-block solution">
+          <h3>✦ The GUIDE-AI Approach</h3>
+          <ul>
+            <li>LLM-based Guideline Navigators that understand free-text clinical questions and retrieve evidence-grounded answers</li>
+            <li>Cross-guideline reasoning: handling patients with comorbid conditions across heart failure, CKD, COPD, asthma, and IBD</li>
+            <li>Transparent source attribution — every answer links back to the specific guideline recommendation</li>
+            <li>Prospective clinical validation in diverse EU healthcare settings with measurable adherence outcomes</li>
+            <li>Open science approach: validated datasets and model benchmarks shared with the research community</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Work Packages (overview) ──────────────────────────────── -->
+  <section class="section" aria-labelledby="wp-overview-heading">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="section-label">Project Structure</span>
+        <h2 class="section-title" id="wp-overview-heading">Work Packages</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          GUIDE-AI is organised into seven work packages covering the full lifecycle from clinical requirements to real-world validation and dissemination.
+        </p>
+      </div>
+      <div class="grid-3">
+        <div class="wp-card aos">
+          <span class="wp-number">WP01</span>
+          <h3>Project Management &amp; Coordination</h3>
+          <p>Overall project governance, risk management, financial reporting, and quality assurance across all consortium partners.</p>
+        </div>
+        <div class="wp-card aos aos-delay-1">
+          <span class="wp-number">WP02</span>
+          <h3>Clinical Requirements &amp; Knowledge Engineering</h3>
+          <p>Defining clinical use cases, curating guideline corpora, and creating the ontological framework for cross-disease reasoning.</p>
+        </div>
+        <div class="wp-card aos aos-delay-2">
+          <span class="wp-number">WP03</span>
+          <h3>Data Governance &amp; Infrastructure</h3>
+          <p>GDPR-compliant data infrastructure, federated learning architecture, and secure processing pipelines across sites.</p>
+        </div>
+        <div class="wp-card aos">
+          <span class="wp-number">WP04</span>
+          <h3>AI &amp; LLM Development</h3>
+          <p>Fine-tuning, alignment, and benchmarking of LLMs on clinical guideline content, with hallucination detection and safety guardrails.</p>
+        </div>
+        <div class="wp-card aos aos-delay-1">
+          <span class="wp-number">WP05</span>
+          <h3>Clinical Validation &amp; Real-World Testing</h3>
+          <p>Prospective evaluation of Guideline Navigators in clinical settings across multiple EU health systems.</p>
+        </div>
+        <div class="wp-card aos aos-delay-2">
+          <span class="wp-number">WP07</span>
+          <h3>Dissemination &amp; Communication</h3>
+          <p>Scientific dissemination, stakeholder engagement, patient communication, and policy outreach activities.</p>
+        </div>
+      </div>
+      <div class="text-center mt-lg">
+        <a href="work-packages.html" class="btn btn-outline">View all Work Packages →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── News ──────────────────────────────────────────────────── -->
+  <section class="section section-light" aria-labelledby="news-heading">
+    <div class="container">
+      <div class="d-flex align-center flex-wrap gap-md mb-lg" style="justify-content: space-between;">
+        <div>
+          <span class="section-label">Stay Informed</span>
+          <h2 class="section-title" id="news-heading" style="margin-bottom:0">Latest News</h2>
+        </div>
+        <a href="results.html#news" class="btn btn-outline btn-sm">All news →</a>
+      </div>
+      <div class="grid-3">
+        <!-- News item 1 -->
+        <article class="news-card aos">
+          <div class="news-card-body">
+            <span class="news-tag">Project Update</span>
+            <h3>GUIDE-AI Consortium Convenes for Kick-Off Meeting</h3>
+            <p>Representatives from all partner institutions gathered to officially launch GUIDE-AI, align on project objectives, and establish working group structures.</p>
+          </div>
+          <div class="news-card-footer">
+            <time class="news-date" datetime="2025-04-10">10 April 2025</time>
+            <a href="results.html#news" class="btn btn-outline btn-sm">Read more</a>
+          </div>
+        </article>
+        <!-- News item 2 -->
+        <article class="news-card aos aos-delay-1">
+          <div class="news-card-body">
+            <span class="news-tag">Announcement</span>
+            <h3>GUIDE-AI Awarded €XX Million by the Innovative Health Initiative</h3>
+            <p>The IHI JU has awarded GUIDE-AI funding under Call 9, recognising the project's potential to transform AI-assisted clinical decision support in Europe.</p>
+          </div>
+          <div class="news-card-footer">
+            <time class="news-date" datetime="2025-02-01">1 February 2025</time>
+            <a href="results.html#news" class="btn btn-outline btn-sm">Read more</a>
+          </div>
+        </article>
+        <!-- News item 3 -->
+        <article class="news-card aos aos-delay-2">
+          <div class="news-card-body">
+            <span class="news-tag">Overview</span>
+            <h3>Introducing GUIDE-AI: Intelligent Guideline Navigators for Chronic Disease</h3>
+            <p>An introduction to the GUIDE-AI project — its scientific vision, the clinical problems it addresses, and how the consortium will tackle them over four years.</p>
+          </div>
+          <div class="news-card-footer">
+            <time class="news-date" datetime="2025-01-15">15 January 2025</time>
+            <a href="results.html#news" class="btn btn-outline btn-sm">Read more</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Partners strip ────────────────────────────────────────── -->
+  <section class="partners-strip" aria-labelledby="partners-heading">
+    <div class="container text-center">
+      <span class="section-label">Our Consortium</span>
+      <h2 class="section-title" id="partners-heading" style="margin-bottom:2rem;">Partner Institutions</h2>
+      <!-- TODO: Replace placeholders with actual partner logos once received -->
+      <div class="partners-grid">
+        <div class="partner-placeholder">Partner 1</div>
+        <div class="partner-placeholder">Partner 2</div>
+        <div class="partner-placeholder">Partner 3</div>
+        <div class="partner-placeholder">Partner 4</div>
+        <div class="partner-placeholder">Partner 5</div>
+        <div class="partner-placeholder">Partner 6</div>
+        <div class="partner-placeholder">Partner 7</div>
+        <div class="partner-placeholder">Partner 8</div>
+      </div>
+      <a href="consortium.html" class="btn btn-outline mt-lg">View all partners →</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════════ FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="navbar-brand" href="index.html" aria-label="GUIDE-AI — home">
+          <img src="assets/images/logo.png" alt="" width="30" height="30" aria-hidden="true">
+          GUIDE<span class="brand-ai">-AI</span>
+        </a>
+        <p>AI-powered guideline navigators for chronic disease management. An IHI JU-funded European research project (Grant No. 101253015).</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work-packages.html">Work Packages</a></li>
+          <li><a href="consortium.html">Consortium</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Outputs</h4>
+        <ul>
+          <li><a href="results.html#publications">Publications</a></li>
+          <li><a href="results.html#deliverables">Deliverables</a></li>
+          <li><a href="results.html#news">News</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- TODO: Update with real LinkedIn/Bluesky handles -->
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://bsky.app" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-eu-bar">
+    <div class="container">
+      <div class="footer-eu-inner">
+        <div class="footer-eu-logos">
+          <img src="assets/images/ihi-logo.svg" alt="IHI Joint Undertaking" height="38">
+          <img src="assets/images/eu-flag.svg" alt="European Union" height="32">
+        </div>
+        <p class="footer-eu-text">
+          <strong>GUIDE-AI</strong> is funded by the Innovative Health Initiative Joint Undertaking (IHI JU) under Grant Agreement No.&nbsp;<strong>101253015</strong>.
+          The JU receives support from the European Union's Horizon Europe research and innovation programme and EFPIA.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2025 GUIDE-AI Consortium — IHI Call 9 · Grant No. 101253015</span>
+      <span><a href="privacy.html">Privacy Policy</a> · <a href="privacy.html#cookies">Cookie Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

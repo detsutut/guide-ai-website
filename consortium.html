@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consortium — GUIDE-AI</title>
+  <meta name="description" content="Meet the GUIDE-AI consortium — a multidisciplinary partnership of clinical, academic, industry, and patient organisations from across Europe.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Partner grid */
+    .partner-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+    .partner-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: .75rem;
+      transition: var(--transition);
+    }
+    .partner-card:hover { box-shadow: var(--shadow); border-color: var(--accent-light); transform: translateY(-2px); }
+    .partner-card-logo {
+      width: 100%;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--light);
+      border-radius: var(--radius);
+      font-size: .75rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .partner-card-name { font-size: .9rem; font-weight: 600; color: var(--primary); line-height: 1.3; }
+    .partner-card-country { font-size: .8rem; color: var(--muted); }
+    .partner-card-type { }
+
+    /* Category tab style */
+    .category-section { margin-bottom: 3.5rem; }
+    .category-title {
+      font-size: 1.0625rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 1.25rem;
+      padding-bottom: .625rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+
+    /* Governance */
+    .governance-block {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+    }
+    .governance-role {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+    .governance-role:last-child { border-bottom: none; padding-bottom: 0; }
+    .governance-role-label {
+      flex-shrink: 0;
+      width: 180px;
+      font-weight: 600;
+      font-size: .9rem;
+      color: var(--primary);
+    }
+    .governance-role-info { font-size: .9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar-inner">
+        <a class="navbar-brand" href="index.html" aria-label="GUIDE-AI — home">
+          <img src="assets/images/logo.png" alt="" width="36" height="36" aria-hidden="true">
+          GUIDE<span class="brand-ai">-AI</span>
+        </a>
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-menu" id="nav-menu" role="list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="about.html">About</a>
+            <ul class="dropdown-menu" role="list">
+              <li><a href="about.html#background">Background</a></li>
+              <li><a href="about.html#objectives">Objectives</a></li>
+              <li><a href="about.html#approach">Approach</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="work-packages.html">Work Packages</a></li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link active" href="consortium.html">Consortium</a>
+            <ul class="dropdown-menu" role="list">
+              <li><a href="#partners">Partners</a></li>
+              <li><a href="#governance">Governance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a class="nav-link" href="results.html">Results</a>
+            <ul class="dropdown-menu" role="list">
+              <li><a href="results.html#publications">Publications</a></li>
+              <li><a href="results.html#deliverables">Deliverables</a></li>
+              <li><a href="results.html#news">News</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <div class="page-header">
+    <div class="container">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Consortium</li>
+        </ol>
+      </nav>
+      <h1>Consortium</h1>
+      <p>GUIDE-AI brings together a multidisciplinary European consortium of clinical centres, academic institutions, technology companies, and patient organisations.</p>
+    </div>
+  </div>
+
+  <!-- ── Partners ──────────────────────────────────────────────── -->
+  <section class="section" id="partners" aria-labelledby="partners-heading">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title" id="partners-heading">Partner Institutions</h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          <!-- TODO: Update partner count and country count -->
+          Our consortium unites [XX] partners from [XX] European countries, spanning academic research, clinical practice, technology development, and patient representation.
+        </p>
+      </div>
+
+      <div class="alert alert-info mb-lg">
+        Partner logos and details will be added as the consortium is finalised. Contact <a href="contact.html">the coordination team</a> for enquiries.
+      </div>
+
+      <!-- Academic & Research -->
+      <div class="category-section">
+        <h3 class="category-title">🎓 Academic &amp; Research Institutions</h3>
+        <div class="partner-grid">
+          <!-- TODO: Replace with real partner cards -->
+          <div class="partner-card">
+            <div class="partner-card-logo">Logo</div>
+            <span class="partner-card-name">University / Research Institute</span>
+            <span class="partner-card-country">Country</span>
+            <span class="tag tag-blue">Coordinator</span>
+          </div>
+          <div class="partner-card">
+            <div class="partner-card-logo">Logo</div>
+            <span class="partner-card-name">University / Research Institute</span>
+            <span class="partner-card-country">Country</span>
+            <span class="tag">Partner</span>
+          </div>
+          <div class="partner-card">
+            <div class="partner-card-logo">Logo</div>
+            <span class="partner-card-name">University / Research Institute</span>
+            <span class="partner-card-country">Country</span>
+            <span class="tag">Partner</span>
+          </div>
+          <div class="partner-card">
+            <div class="partner-card-logo">Logo</div>
+            <span class="partner-card-name">University / Research Institute</span>
+            <span class="partner-card-country">Country</span>
+            <span class="tag">Partner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clinical -->
+      <div class="category-section">
+        <h3 class="category-title">🏥 Clinical Centres &amp; Hospitals</h3>
+        <div class="partner-grid">
+          <div class="partner-card">
+            <div class="partner-card-logo">Logo</div>
+            <span class="partner-card-name">Clinical Centre / Hospital</span>
+            <span class="partner-card-country">Country</span>
+            <span class="tag">Partner</span>
+          </div>
+          <div class="partner-card">
+            <div class="partner-card-logo">Logo</div>
+            <span class="partner-card-name">Clinical Centre / Hospital</span>
+            <span class="partner-card-country">Country</span>
+            <span class="tag">Partner</span>
+          </div>
+          <div class="partner-card">
+            <div class="partner-card-logo">Logo</div>
+            <span class="partner-card-name">Clinical Centre / Hospital</span>
+            <span class="partner-card-country">Country</span>
+            <span class="tag">Partner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industry -->
+      <div class="category-section">
+        <h3 class="category-title">💡 Industry &amp; Technology Partners</h3>
+        <div class="partner-grid">
+          <div class="partner-card">
+            <div class="partner-card-logo">Logo</div>
+            <span class="partner-card-name">Technology / Industry Company</span>
+            <span class="partner-card-country">Country</span>
+            <span class="tag tag-teal">EFPIA Member</span>
+          </div>
+          <div class="partner-card">
+            <div class="partner-card-logo">Logo</div>
+            <span class="partner-card-name">Technology / Industry Company</span>
+            <span class="partner-card-country">Country</span>
+            <span class="tag">Partner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Patient -->
+      <div class="category-section">
+        <h3 class="category-title">🤝 Patient Organisations &amp; Societies</h3>
+        <div class="partner-grid">
+          <div class="partner-card">
+            <div class="partner-card-logo">Logo</div>
+            <span class="partner-card-name">Patient Organisation</span>
+            <span class="partner-card-country">European</span>
+            <span class="tag">Partner</span>
+          </div>
+          <div class="partner-card">
+            <div class="partner-card-logo">Logo</div>
+            <span class="partner-card-name">Medical Society</span>
+            <span class="partner-card-country">European</span>
+            <span class="tag">Partner</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Governance ─────────────────────────────────────────────── -->
+  <section class="section section-light" id="governance" aria-labelledby="governance-heading">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="section-label">Project Structure</span>
+        <h2 class="section-title" id="governance-heading">Governance</h2>
+        <p class="section-subtitle" style="margin:0 auto;">
+          GUIDE-AI is governed by a lean, two-tier structure designed to enable fast decision-making while maintaining scientific integrity and IHI JU compliance.
+        </p>
+      </div>
+
+      <div class="grid-2" style="gap:2rem;">
+        <div class="governance-block">
+          <h3 style="margin-bottom:1.25rem;">Decision-Making Bodies</h3>
+          <div class="governance-role">
+            <span class="governance-role-label">General Assembly</span>
+            <span class="governance-role-info">All consortium partners. Meets annually. Highest decision-making authority on strategic matters, budget reallocation above threshold, and consortium composition changes.</span>
+          </div>
+          <div class="governance-role">
+            <span class="governance-role-label">Steering Committee</span>
+            <span class="governance-role-info">One representative per partner. Meets quarterly. Responsible for day-to-day project governance, milestone tracking, and cross-WP coordination.</span>
+          </div>
+          <div class="governance-role">
+            <span class="governance-role-label">Project Coordinator</span>
+            <span class="governance-role-info">Leads the Steering Committee, serves as primary contact with IHI JU, and oversees legal and financial management through WP01. <!-- TODO: Add institution name --></span>
+          </div>
+          <div class="governance-role">
+            <span class="governance-role-label">Scientific Advisory Board</span>
+            <span class="governance-role-info">Independent external experts. Reviews scientific quality, provides strategic input, and assesses alignment with clinical needs and regulatory requirements.</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="governance-block mb-lg">
+            <h3 style="margin-bottom:1.25rem;">WP Leadership</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th>WP</th><th>Lead Institution</th></tr>
+                </thead>
+                <tbody>
+                  <!-- TODO: Update lead institutions -->
+                  <tr><td><span class="wp-number">WP01</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
+                  <tr><td><span class="wp-number">WP02</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
+                  <tr><td><span class="wp-number">WP03</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
+                  <tr><td><span class="wp-number">WP04</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
+                  <tr><td><span class="wp-number">WP05</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
+                  <tr><td><span class="wp-number">WP06</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
+                  <tr><td><span class="wp-number">WP07</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="alert alert-info">
+            <strong>Internal collaboration:</strong> All internal project management and file sharing is handled through a dedicated platform (SharePoint/Teams) separate from this public website. Consortium members requiring access should contact the Project Coordinator.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="navbar-brand" href="index.html" aria-label="GUIDE-AI — home">
+          <img src="assets/images/logo.png" alt="" width="30" height="30" aria-hidden="true">
+          GUIDE<span class="brand-ai">-AI</span>
+        </a>
+        <p>AI-powered guideline navigators for chronic disease management. An IHI JU-funded European research project (Grant No. 101253015).</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work-packages.html">Work Packages</a></li>
+          <li><a href="consortium.html">Consortium</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Outputs</h4>
+        <ul>
+          <li><a href="results.html#publications">Publications</a></li>
+          <li><a href="results.html#deliverables">Deliverables</a></li>
+          <li><a href="results.html#news">News</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://bsky.app" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-eu-bar">
+    <div class="container">
+      <div class="footer-eu-inner">
+        <div class="footer-eu-logos">
+          <img src="assets/images/ihi-logo.svg" alt="IHI Joint Undertaking" height="38">
+          <img src="assets/images/eu-flag.svg" alt="European Union" height="32">
+        </div>
+        <p class="footer-eu-text">
+          <strong>GUIDE-AI</strong> is funded by the Innovative Health Initiative Joint Undertaking (IHI JU) under Grant Agreement No.&nbsp;<strong>101253015</strong>.
+          The JU receives support from the European Union's Horizon Europe research and innovation programme and EFPIA.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2025 GUIDE-AI Consortium — IHI Call 9 · Grant No. 101253015</span>
+      <span><a href="privacy.html">Privacy Policy</a> · <a href="privacy.html#cookies">Cookie Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
