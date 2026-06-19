@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -89,8 +89,7 @@
     <div class="container">
       <div class="navbar-inner">
         <a class="navbar-brand" href="index.html" aria-label="GUIDE-AI — home">
-          <img src="assets/images/logo.png" alt="" width="36" height="36" aria-hidden="true">
-          GUIDE<span class="brand-ai">-AI</span>
+          <img src="assets/images/logo.png" alt="GUIDE-AI" height="40">
         </a>
         <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">☰</button>
         <ul class="nav-menu" id="nav-menu" role="list">
@@ -149,9 +148,32 @@
         <span class="section-label">Who We Are</span>
         <h2 class="section-title" id="partners-heading">Partner Institutions</h2>
         <p class="section-subtitle" style="margin:0 auto;">
-          <!-- TODO: Update partner count and country count -->
-          Our consortium unites [XX] partners from [XX] European countries, spanning academic research, clinical practice, technology development, and patient representation.
+          Our consortium unites <strong>19 partners</strong> from <strong>8 countries</strong> — Germany, Italy, Netherlands, Estonia, Slovenia, United Kingdom, Switzerland, and Israel — spanning academic research, clinical practice, technology development, and patient representation.
         </p>
+      </div>
+
+      <!-- Consortium pillars -->
+      <div class="grid-4 mb-lg" style="gap:1.25rem;">
+        <div class="card text-center" style="padding:1.5rem 1rem;">
+          <div style="font-size:2rem;margin-bottom:.625rem;">🎓</div>
+          <h3 style="font-size:.9375rem;margin-bottom:.375rem;">Academic &amp; Research</h3>
+          <p style="font-size:.8125rem;color:var(--muted);margin:0;">Universities and research institutes advancing AI methods and clinical knowledge</p>
+        </div>
+        <div class="card text-center" style="padding:1.5rem 1rem;">
+          <div style="font-size:2rem;margin-bottom:.625rem;">🏥</div>
+          <h3 style="font-size:.9375rem;margin-bottom:.375rem;">Clinical Centres</h3>
+          <p style="font-size:.8125rem;color:var(--muted);margin:0;">Hospitals providing real-world validation environments across multiple EU health systems</p>
+        </div>
+        <div class="card text-center" style="padding:1.5rem 1rem;">
+          <div style="font-size:2rem;margin-bottom:.625rem;">💡</div>
+          <h3 style="font-size:.9375rem;margin-bottom:.375rem;">Industry &amp; Technology</h3>
+          <p style="font-size:.8125rem;color:var(--muted);margin:0;">SMEs and EFPIA members providing data, infrastructure, and translation pathways</p>
+        </div>
+        <div class="card text-center" style="padding:1.5rem 1rem;">
+          <div style="font-size:2rem;margin-bottom:.625rem;">🤝</div>
+          <h3 style="font-size:.9375rem;margin-bottom:.375rem;">Patient Organisations</h3>
+          <p style="font-size:.8125rem;color:var(--muted);margin:0;">Patient and public involvement ensuring people-centred design throughout</p>
+        </div>
       </div>
 
       <div class="alert alert-info mb-lg">
@@ -162,29 +184,29 @@
       <div class="category-section">
         <h3 class="category-title">🎓 Academic &amp; Research Institutions</h3>
         <div class="partner-grid">
-          <!-- TODO: Replace with real partner cards -->
           <div class="partner-card">
             <div class="partner-card-logo">Logo</div>
-            <span class="partner-card-name">University / Research Institute</span>
-            <span class="partner-card-country">Country</span>
+            <span class="partner-card-name">Charité – Universitätsmedizin Berlin</span>
+            <span class="partner-card-country">🇩🇪 Germany</span>
             <span class="tag tag-blue">Coordinator</span>
           </div>
           <div class="partner-card">
             <div class="partner-card-logo">Logo</div>
-            <span class="partner-card-name">University / Research Institute</span>
-            <span class="partner-card-country">Country</span>
+            <span class="partner-card-name">University of Pavia</span>
+            <span class="partner-card-country">🇮🇹 Italy</span>
+            <span class="tag tag-teal">WP03 Lead</span>
+          </div>
+          <!-- TODO: Add remaining academic partners once confirmed -->
+          <div class="partner-card" style="border-style:dashed;opacity:.6;">
+            <div class="partner-card-logo" style="font-size:.7rem;color:var(--muted);">To be confirmed</div>
+            <span class="partner-card-name" style="color:var(--muted);">Academic Partner</span>
+            <span class="partner-card-country">TBD</span>
             <span class="tag">Partner</span>
           </div>
-          <div class="partner-card">
-            <div class="partner-card-logo">Logo</div>
-            <span class="partner-card-name">University / Research Institute</span>
-            <span class="partner-card-country">Country</span>
-            <span class="tag">Partner</span>
-          </div>
-          <div class="partner-card">
-            <div class="partner-card-logo">Logo</div>
-            <span class="partner-card-name">University / Research Institute</span>
-            <span class="partner-card-country">Country</span>
+          <div class="partner-card" style="border-style:dashed;opacity:.6;">
+            <div class="partner-card-logo" style="font-size:.7rem;color:var(--muted);">To be confirmed</div>
+            <span class="partner-card-name" style="color:var(--muted);">Academic Partner</span>
+            <span class="partner-card-country">TBD</span>
             <span class="tag">Partner</span>
           </div>
         </div>
@@ -196,20 +218,21 @@
         <div class="partner-grid">
           <div class="partner-card">
             <div class="partner-card-logo">Logo</div>
-            <span class="partner-card-name">Clinical Centre / Hospital</span>
-            <span class="partner-card-country">Country</span>
+            <span class="partner-card-name">IRCCS Maugeri di Pavia</span>
+            <span class="partner-card-country">🇮🇹 Italy</span>
             <span class="tag">Partner</span>
           </div>
-          <div class="partner-card">
-            <div class="partner-card-logo">Logo</div>
-            <span class="partner-card-name">Clinical Centre / Hospital</span>
-            <span class="partner-card-country">Country</span>
+          <!-- TODO: Add remaining clinical partners once confirmed -->
+          <div class="partner-card" style="border-style:dashed;opacity:.6;">
+            <div class="partner-card-logo" style="font-size:.7rem;color:var(--muted);">To be confirmed</div>
+            <span class="partner-card-name" style="color:var(--muted);">Clinical Centre</span>
+            <span class="partner-card-country">TBD</span>
             <span class="tag">Partner</span>
           </div>
-          <div class="partner-card">
-            <div class="partner-card-logo">Logo</div>
-            <span class="partner-card-name">Clinical Centre / Hospital</span>
-            <span class="partner-card-country">Country</span>
+          <div class="partner-card" style="border-style:dashed;opacity:.6;">
+            <div class="partner-card-logo" style="font-size:.7rem;color:var(--muted);">To be confirmed</div>
+            <span class="partner-card-name" style="color:var(--muted);">Clinical Centre</span>
+            <span class="partner-card-country">TBD</span>
             <span class="tag">Partner</span>
           </div>
         </div>
@@ -221,14 +244,15 @@
         <div class="partner-grid">
           <div class="partner-card">
             <div class="partner-card-logo">Logo</div>
-            <span class="partner-card-name">Technology / Industry Company</span>
-            <span class="partner-card-country">Country</span>
+            <span class="partner-card-name">AstraZeneca</span>
+            <span class="partner-card-country">🇬🇧 United Kingdom</span>
             <span class="tag tag-teal">EFPIA Member</span>
           </div>
-          <div class="partner-card">
-            <div class="partner-card-logo">Logo</div>
-            <span class="partner-card-name">Technology / Industry Company</span>
-            <span class="partner-card-country">Country</span>
+          <!-- TODO: Add remaining industry partners once confirmed -->
+          <div class="partner-card" style="border-style:dashed;opacity:.6;">
+            <div class="partner-card-logo" style="font-size:.7rem;color:var(--muted);">To be confirmed</div>
+            <span class="partner-card-name" style="color:var(--muted);">Industry Partner</span>
+            <span class="partner-card-country">TBD</span>
             <span class="tag">Partner</span>
           </div>
         </div>
@@ -238,15 +262,16 @@
       <div class="category-section">
         <h3 class="category-title">🤝 Patient Organisations &amp; Societies</h3>
         <div class="partner-grid">
-          <div class="partner-card">
-            <div class="partner-card-logo">Logo</div>
-            <span class="partner-card-name">Patient Organisation</span>
+          <!-- TODO: Add patient organisation partners once confirmed -->
+          <div class="partner-card" style="border-style:dashed;opacity:.6;">
+            <div class="partner-card-logo" style="font-size:.7rem;color:var(--muted);">To be confirmed</div>
+            <span class="partner-card-name" style="color:var(--muted);">Patient Organisation</span>
             <span class="partner-card-country">European</span>
             <span class="tag">Partner</span>
           </div>
-          <div class="partner-card">
-            <div class="partner-card-logo">Logo</div>
-            <span class="partner-card-name">Medical Society</span>
+          <div class="partner-card" style="border-style:dashed;opacity:.6;">
+            <div class="partner-card-logo" style="font-size:.7rem;color:var(--muted);">To be confirmed</div>
+            <span class="partner-card-name" style="color:var(--muted);">Patient Organisation</span>
             <span class="partner-card-country">European</span>
             <span class="tag">Partner</span>
           </div>
@@ -280,7 +305,7 @@
           </div>
           <div class="governance-role">
             <span class="governance-role-label">Project Coordinator</span>
-            <span class="governance-role-info">Leads the Steering Committee, serves as primary contact with IHI JU, and oversees legal and financial management through WP01. <!-- TODO: Add institution name --></span>
+            <span class="governance-role-info">Charité – Universitätsmedizin Berlin (Germany). Leads the Steering Committee, serves as primary contact with IHI JU, and oversees legal and financial management through WP01.</span>
           </div>
           <div class="governance-role">
             <span class="governance-role-label">Scientific Advisory Board</span>
@@ -297,14 +322,13 @@
                   <tr><th>WP</th><th>Lead Institution</th></tr>
                 </thead>
                 <tbody>
-                  <!-- TODO: Update lead institutions -->
-                  <tr><td><span class="wp-number">WP01</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
-                  <tr><td><span class="wp-number">WP02</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
-                  <tr><td><span class="wp-number">WP03</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
-                  <tr><td><span class="wp-number">WP04</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
-                  <tr><td><span class="wp-number">WP05</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
-                  <tr><td><span class="wp-number">WP06</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
-                  <tr><td><span class="wp-number">WP07</span></td><td style="color:var(--muted);font-style:italic;">TBD</td></tr>
+                  <tr><td><span class="wp-number">WP01</span></td><td style="color:var(--muted);font-style:italic;"><!-- TODO: confirm --> TBD</td></tr>
+                  <tr><td><span class="wp-number">WP02</span></td><td style="color:var(--muted);font-style:italic;"><!-- TODO: confirm --> TBD</td></tr>
+                  <tr><td><span class="wp-number">WP03</span></td><td>University of Pavia (IT)</td></tr>
+                  <tr><td><span class="wp-number">WP04</span></td><td style="color:var(--muted);font-style:italic;"><!-- TODO: confirm --> TBD</td></tr>
+                  <tr><td><span class="wp-number">WP05</span></td><td style="color:var(--muted);font-style:italic;"><!-- TODO: confirm --> TBD</td></tr>
+                  <tr><td><span class="wp-number">WP06</span></td><td style="color:var(--muted);font-style:italic;"><!-- TODO: confirm --> TBD</td></tr>
+                  <tr><td><span class="wp-number">WP07</span></td><td style="color:var(--muted);font-style:italic;"><!-- TODO: confirm --> TBD</td></tr>
                 </tbody>
               </table>
             </div>
@@ -325,8 +349,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a class="navbar-brand" href="index.html" aria-label="GUIDE-AI — home">
-          <img src="assets/images/logo.png" alt="" width="30" height="30" aria-hidden="true">
-          GUIDE<span class="brand-ai">-AI</span>
+          <img src="assets/images/logo.png" alt="GUIDE-AI" height="32">
         </a>
         <p>AI-powered guideline navigators for chronic disease management. An IHI JU-funded European research project (Grant No. 101253015).</p>
       </div>
