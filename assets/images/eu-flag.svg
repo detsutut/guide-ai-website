@@ -1,43 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 60" width="90" height="60" role="img" aria-label="European Union flag">
-  <rect width="90" height="60" fill="#003399"/>
-  <!-- 12 gold stars arranged in a circle -->
-  <g fill="#FFCC00">
-    <!-- r=16 from centre (45,30), 12 stars at 30° intervals -->
-    <!-- 0°   → (45, 14) -->
-    <polygon points="45,10.5 46.2,14.2 50,14.2 47,16.5 48.1,20.2 45,18 41.9,20.2 43,16.5 40,14.2 43.8,14.2" transform="translate(0,0)"/>
-    <!-- 30°  → (53,16) -->
-    <polygon points="45,10.5 46.2,14.2 50,14.2 47,16.5 48.1,20.2 45,18 41.9,20.2 43,16.5 40,14.2 43.8,14.2" transform="translate(8,-14) rotate(0,45,30)"/>
-    <!-- Using simplified approach: place star polygons at each position -->
-    <!-- Centre (45,30), radius 16 -->
-    <!-- Angle 0° (top):    (45, 14) -->
-    <!-- Angle 30°:         (53, 16) -->
-    <!-- Angle 60°:         (58.86, 22) -->
-    <!-- Angle 90° (right): (61, 30) -->
-    <!-- Angle 120°:        (58.86, 38) -->
-    <!-- Angle 150°:        (53, 44) -->
-    <!-- Angle 180° (bot):  (45, 46) -->
-    <!-- Angle 210°:        (37, 44) -->
-    <!-- Angle 240°:        (31.14, 38) -->
-    <!-- Angle 270° (left): (29, 30) -->
-    <!-- Angle 300°:        (31.14, 22) -->
-    <!-- Angle 330°:        (37, 16) -->
-  </g>
-  <!-- Redone with proper star path at each position (r_outer=2.2, r_inner=0.95) -->
-  <g fill="#FFCC00">
-    <use href="#star" transform="translate(45,14)"/>
-    <use href="#star" transform="translate(53,16)"/>
-    <use href="#star" transform="translate(58.86,22)"/>
-    <use href="#star" transform="translate(61,30)"/>
-    <use href="#star" transform="translate(58.86,38)"/>
-    <use href="#star" transform="translate(53,44)"/>
-    <use href="#star" transform="translate(45,46)"/>
-    <use href="#star" transform="translate(37,44)"/>
-    <use href="#star" transform="translate(31.14,38)"/>
-    <use href="#star" transform="translate(29,30)"/>
-    <use href="#star" transform="translate(31.14,22)"/>
-    <use href="#star" transform="translate(37,16)"/>
-  </g>
-  <defs>
-    <path id="star" d="M0,-2.2 L0.52,-0.72 L2.09,-0.72 L0.79,0.27 L1.3,1.78 L0,0.87 L-1.3,1.78 L-0.79,0.27 L-2.09,-0.72 L-0.52,-0.72 Z"/>
-  </defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="600">
+<rect width="900" height="600" fill="#039"/>
+<g fill="#fc0" transform="translate(450,300)">
+<path id="s" d="M0,162.5 22.041947,230.338137 -35.664619,188.411863H35.664619L-22.041947,230.338137z"/>
+<use xlink:href="#s" y="-400"/>
+<g id="s5">
+<use xlink:href="#s" transform="rotate(30) rotate(-30,0,200)"/>
+<use xlink:href="#s" transform="rotate(60) rotate(-60,0,200)"/>
+<use xlink:href="#s" transform="rotate(90) rotate(-90,0,200)"/>
+<use xlink:href="#s" transform="rotate(120) rotate(-120,0,200)"/>
+<use xlink:href="#s" transform="rotate(150) rotate(-150,0,200)"/>
+</g>
+<use xlink:href="#s5" transform="scale(-1,1)"/>
+</g>
 </svg>
