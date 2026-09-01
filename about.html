@@ -83,23 +83,21 @@
             <span class="section-label">Background</span>
             <h2 class="section-title" id="background-heading">The problem with clinical guidelines</h2>
             <p style="color:var(--muted); margin-bottom:1rem; line-height:1.75;">
-              Clinical practice guidelines (CPGs) represent the gold standard of evidence-based medicine.
-              Produced by leading professional societies — ESC, KDIGO, GOLD, GINA, ECCO — they synthesise
-              thousands of studies into graded recommendations designed to improve patient outcomes.
-              Together, the five chronic conditions targeted by GUIDE-AI (HFrEF, CKD, COPD, asthma, and IBD)
-              affect more than <strong>160 million Europeans</strong>.
+              Clinical practice guidelines represent the gold standard of evidence-based medicine.
+              Produced by leading professional societies like ESC, KDIGO, GOLD, GINA, and ECCO, they synthesise
+              thousands of studies into recommendations, designed to improve patient outcomes.
             </p>
             <p style="color:var(--muted); margin-bottom:1rem; line-height:1.75;">
-              Yet applying guidelines in practice is far from straightforward. A single patient with heart failure
-              with reduced ejection fraction (HFrEF), chronic kidney disease, and COPD is served by three separate
-              guideline documents running to hundreds of pages each. No single guideline addresses the intersection.
-              Clinicians must synthesise this complexity mentally, in real time, under pressure.
+              Yet, applying guidelines is far from straightforward, given their length, frequent updates, and time
+              constraints in clinical practice. The result is a variation in guideline-directed care.
+              The combination of individual patient data with guidelines and the role of AI in that process are
+              active areas of research. Decision points in guidelines may contain ambiguity on purpose where
+              sufficient evidence is not available. Our consortium aims to integrate AI into shared decision-making
+              between physicians and patients along guideline-directed care paths.
             </p>
             <p style="color:var(--muted); line-height:1.75;">
-              The result: significant variation in guideline adherence, avoidable adverse events, and
-              inequalities in access to evidence-based care — particularly outside specialist centres.
-              GUIDE-AI, coordinated by <strong>Charité – Universitätsmedizin Berlin</strong> and bringing together
-              19 partner institutions across 8 countries, addresses this challenge directly.
+              GUIDE-AI is coordinated by <strong>Charité – Universitätsmedizin Berlin</strong> and brings together
+              19 partner institutions across 8 countries in order to directly address this challenge.
             </p>
           </div>
           <div>
@@ -181,8 +179,8 @@
                 1</div>
               <div>
                 <h3>Build validated Guideline Navigators</h3>
-                <p>Develop and benchmark LLM-based Guideline Navigators for heart failure, CKD, COPD, asthma, and IBD —
-                  capable of answering free-text clinical questions with evidence-graded, traceable responses.</p>
+                <p>Develop and benchmark LLM-based Guideline Navigators for HFrEF, CKD, COPD, and asthma, capable of
+                  mapping patient data to guideline recommendations.</p>
               </div>
             </div>
           </div>
@@ -192,9 +190,9 @@
                 style="flex-shrink:0;width:36px;height:36px;background:var(--primary);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;">
                 2</div>
               <div>
-                <h3>Enable cross-disease reasoning</h3>
-                <p>Create an ontological framework that allows the Guideline Navigator to handle patients with multiple
-                  comorbidities, integrating recommendations from different disease-specific guidelines.</p>
+                <h3>Empower patients and doctors through AI-guided care</h3>
+                <p>Build AI tools that help patients and healthcare providers make treatment decisions together, making
+                  it easier to follow the latest clinical guidelines.</p>
               </div>
             </div>
           </div>
@@ -205,9 +203,8 @@
                 3</div>
               <div>
                 <h3>Demonstrate clinical safety and effectiveness</h3>
-                <p>Execute a randomised two-arm clinical study at multiple EU sites, measuring the percentage of
-                  guideline-compliant therapies and patient medication changes post-intervention. Evaluation spans
-                  inpatient and outpatient settings across the complete treatment pathway.</p>
+                <p>Execute a rigorous, inclusive and transparent prospective clinical study at two EU sites. Evaluation
+                  spans inpatient and outpatient settings across the complete treatment pathway.</p>
               </div>
             </div>
           </div>
@@ -218,7 +215,7 @@
                 4</div>
               <div>
                 <h3>Address ethics, safety, and regulation</h3>
-                <p>Develop a rigorous framework for AI safety in clinical guideline applications — addressing
+                <p>Develop a framework for AI safety in clinical guideline applications, addressing
                   hallucination risk, bias, explainability requirements, and the EU AI Act classification of GUIDE-AI
                   tools.</p>
               </div>
@@ -257,18 +254,15 @@
           <div class="timeline-item">
             <span class="timeline-date">Layer 1</span>
             <h3>Guideline Knowledge Base</h3>
-            <p>Clinical practice guidelines from ESC, KDIGO, GOLD, GINA, and ECCO are systematically curated,
-              structured, and annotated. Recommendations are tagged with evidence grades, population descriptors, and
-              comorbidity flags.</p>
+            <p>Clinical practice guideline recommendations from international and national professional societies are
+              used as the knowledge base and context for the GUIDE-AI navigators.</p>
           </div>
           <div class="timeline-item">
             <span class="timeline-date">Layer 2</span>
             <h3>LLM Adaptation &amp; Alignment</h3>
-            <p>Open-weight and proprietary LLMs are fine-tuned using supervised learning and reinforcement learning from
-              human feedback (RLHF) on clinical question-answer pairs grounded in guideline content. Retrieval-Augmented
-              Generation (RAG) and advanced Graph-RAG architectures ensure answer fidelity and cross-guideline
-              reasoning. Navigators compare prescribed therapies against guideline recommendations and alert clinicians
-              to deviations from evidence-based protocols.</p>
+            <p>Retrieval-Augmented Generation (RAG) and advanced Graph-RAG architectures ensure answer fidelity and
+              cross-guideline reasoning. Navigators compare prescribed therapies against guideline recommendations and
+              alert clinicians to deviations from evidence-based protocols.</p>
           </div>
           <div class="timeline-item">
             <span class="timeline-date">Layer 3</span>
@@ -284,12 +278,24 @@
               sites. Prospective studies measure adherence outcomes, clinician trust, and workflow integration quality.
             </p>
           </div>
+          <div class="timeline-item">
+            <h3>Empowering Clinical Judgment</h3>
+            <p>In complex medical decisions, guidelines often present a broad spectrum of valid, competing options
+              rather than a single definitive path. Instead of forcing automated recommendations in ambiguous
+              scenarios, our Guideline Navigators systematically map these clinical and structural ambiguities. By
+              distinguishing between clear evidence-based standard care and areas requiring nuanced judgment, the
+              system reduces cognitive friction while preserving the physician's essential role in shared
+              decision-making.</p>
+          </div>
         </div>
 
         <div class="alert alert-info mt-xl">
-          <strong>IHI Funding Acknowledgement:</strong> GUIDE-AI has received funding from the Innovative Health
-          Initiative Joint Undertaking (IHI JU) under Grant Agreement No. 101253015. The IHI JU receives support from
-          the European Union's Horizon Europe research and innovation programme and EFPIA.
+          <strong>IHI Funding Acknowledgement:</strong> This project is supported by the Innovative Health Initiative
+          Joint Undertaking (IHI JU) under Grant Agreement No. 101253015. The JU receives support from the European
+          Union's Horizon Europe research and innovation programme and COCIR, EFPIA, Europa Bio, MedTech Europe, and
+          Vaccines Europe. Views and opinions expressed are however those of the author(s) only and do not necessarily
+          reflect those of the aforementioned parties. Neither of the aforementioned parties can be held responsible
+          for them.
         </div>
       </div>
     </section>

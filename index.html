@@ -90,9 +90,10 @@
           </h1>
           <p class="hero-lead">
             GUIDE-AI develops intelligent Guideline Navigators — LLM-based navigational AI systems that
-            help clinicians navigate complex guidelines for Heart Failure (HF), Chronic Kidney Disease (CKD), Chronic
-            Obstructive Pulmonary Disease (COPD), Asthma, and Inflammatory Bowel Disease (IBD).
-            Together, these chronic conditions affect more than <strong>160 million Europeans</strong>.
+            help clinicians navigate complex guidelines for HFrEF (Heart Failure with reduced Ejection Fraction), CKD
+            (Chronic Kidney Disease), COPD (Chronic Obstructive Pulmonary Disease), asthma, and IBD (Inflammatory Bowel
+            Disease).
+            Together, these chronic conditions are responsible for a large share of morbidity and mortality in Europe.
           </p>
           <div class="hero-actions">
             <a href="about.html" class="btn btn-primary">Learn about the project</a>
@@ -136,21 +137,21 @@
         <span class="section-label">Our Mission</span>
         <h2 class="section-title" id="mission-heading">Bridging the gap between guidelines and bedside care</h2>
         <p class="section-subtitle" style="margin: 0 auto 3rem;">
-          Clinical practice guidelines summarise the best available evidence — yet applying them to individual patients
-          with multiple chronic conditions remains a complex, time-consuming challenge.
+          Clinical practice guidelines summarise the best available evidence, yet applying them to individual patients
+          with different chronic conditions remains a complex, time-consuming challenge.
           GUIDE-AI makes guideline-based navigation fast, reliable, and explainable.
         </p>
         <div class="grid-3">
           <div class="card aos">
             <div class="card-icon card-icon-blue" aria-hidden="true">🧠</div>
             <h3>Large Language Models</h3>
-            <p>We fine-tune and align state-of-the-art LLMs on curated clinical guidelines to enable
+            <p>We align state-of-the-art LLMs with curated clinical guideline corpora to enable
               natural-language guideline query and reasoning.</p>
           </div>
           <div class="card aos aos-delay-1">
             <div class="card-icon card-icon-teal" aria-hidden="true">🏥</div>
-            <h3>Clinical Integration</h3>
-            <p>Guideline Navigators are validated in real clinical workflows across multiple EU health systems, ensuring
+            <h3>Clinical Validation</h3>
+            <p>Guideline Navigators are validated in real clinical workflows across two EU health systems, ensuring
               safety, usability, and clinical relevance.</p>
           </div>
           <div class="card aos aos-delay-2">
@@ -176,14 +177,12 @@
             <ul>
               <li>Clinical guidelines run to hundreds of pages and are updated frequently, making it impossible for busy
                 clinicians to stay current</li>
-              <li>Patients with multiple comorbidities fall between guideline silos — no single document addresses their
-                full complexity</li>
               <li>Existing guideline navigation tools are rigid, keyword-based, and unable to handle natural clinical
                 questions</li>
-              <li>Guideline adherence in heart failure, CKD, COPD, and asthma remains suboptimal, leading to avoidable
-                hospitalisations</li>
-              <li>Limited access to guideline expertise in primary care and underserved settings widens health
-                inequalities</li>
+              <li>Guideline adherence in HFrEF, CKD, COPD, and asthma remains suboptimal, leading to avoidable
+                hospitalisations and undertreatment</li>
+              <li>Static guidelines struggle to account for the complexity of multimorbid patients, and forcing
+                automated AI decisions in ambiguous scenarios risks overriding essential human clinical judgment</li>
             </ul>
           </div>
           <div class="ps-block solution">
@@ -191,12 +190,13 @@
             <ul>
               <li>LLM-based Guideline Navigators that understand free-text clinical questions and retrieve
                 evidence-grounded answers</li>
-              <li>Cross-guideline reasoning: handling patients with comorbid conditions across heart failure, CKD, COPD,
-                asthma, and IBD</li>
               <li>Transparent source attribution — every answer links back to the specific guideline recommendation</li>
-              <li>Prospective clinical validation in diverse EU healthcare settings with measurable adherence outcomes
+              <li>Prospective clinical validation in two EU healthcare settings with measurable adherence outcomes
               </li>
               <li>Open science approach: validated datasets and model benchmarks shared with the research community</li>
+              <li>A cooperative AI partnership that prevents errors of omission in clear-cut cases, while mapping valid
+                alternative pathways in ambivalent scenarios to empower, not replace, human responsibility and patient
+                preference</li>
             </ul>
           </div>
         </div>
@@ -223,32 +223,29 @@
           </div>
           <div class="wp-card aos aos-delay-1" data-wp="WP02">
             <span class="wp-number">WP02</span>
-            <h3>Clinical Requirements &amp; Knowledge Engineering</h3>
-            <p>Defining clinical use cases, curating guidelines, and creating the ontological framework for
-              cross-disease reasoning.</p>
+            <h3>People Centred Innovation &amp; Interestholder Engagement</h3>
+            <p>Ensuring the integration of GUIDE-AI into clinical workflows by understanding interestholder needs.</p>
           </div>
           <div class="wp-card aos aos-delay-2" data-wp="WP03">
             <span class="wp-number">WP03</span>
-            <h3>Data Governance &amp; Infrastructure</h3>
-            <p>GDPR-compliant data infrastructure, federated learning architecture, and secure processing pipelines
-              across sites.</p>
+            <h3>GUIDE-AI Navigator Development</h3>
+            <p>Delivering the technical development of the GUIDE-AI system.</p>
           </div>
           <div class="wp-card aos" data-wp="WP04">
             <span class="wp-number">WP04</span>
-            <h3>AI &amp; LLM Development</h3>
-            <p>Fine-tuning, alignment, and benchmarking of LLMs on clinical guideline content, with hallucination
-              detection and safety guardrails.</p>
+            <h3>Benchmarking Performance &amp; Robustness</h3>
+            <p>Benchmarking, red-teaming and exploring generalizability and scalability.</p>
           </div>
           <div class="wp-card aos aos-delay-1" data-wp="WP05">
             <span class="wp-number">WP05</span>
-            <h3>Clinical Validation &amp; Real-World Testing</h3>
-            <p>Prospective evaluation of Guideline Navigators in clinical settings across multiple EU health systems.
+            <h3>Real-World Validation &amp; Multicentric Insights</h3>
+            <p>A rigorous, inclusive and transparent prospective study.
             </p>
           </div>
-          <div class="wp-card aos aos-delay-2" data-wp="WP07">
-            <span class="wp-number">WP07</span>
-            <h3>Dissemination &amp; Communication</h3>
-            <p>Scientific dissemination, stakeholder engagement, patient communication, and policy outreach activities.
+          <div class="wp-card aos aos-delay-2" data-wp="WP06">
+            <span class="wp-number">WP06</span>
+            <h3>Navigating Risks, Ethics &amp; Compliance</h3>
+            <p>Ensuring the project meets the highest standards of ethical integrity, legal and regulatory compliance.
             </p>
           </div>
         </div>
@@ -278,7 +275,7 @@
                 objectives, and establish working group structures.</p>
             </div>
             <div class="news-card-footer">
-              <time class="news-date" datetime="2025-04-10">10 April 2025</time>
+              <time class="news-date" datetime="2026-04-28">28 April 2026</time>
               <a href="results.html#news" class="btn btn-outline btn-sm">Read more</a>
             </div>
           </article>
@@ -286,7 +283,7 @@
           <article class="news-card aos aos-delay-1">
             <div class="news-card-body">
               <span class="news-tag">Announcement</span>
-              <h3>GUIDE-AI Awarded 4.9 Mio EUR EU funding and 4.2 Mio EUR IKOP from Industry</h3>
+              <h3>GUIDE-AI Awarded €4.8 Million by the Innovative Health Initiative</h3>
               <p>The IHI JU has awarded GUIDE-AI funding under Call 9, recognising the project's potential to transform
                 navigational AI for guideline adherence across Europe.</p>
             </div>
