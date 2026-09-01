@@ -1,1 +1,7 @@
 references/
+
+# macOS metadata
+.DS_Store
+
+# Local tooling
+.claude/
