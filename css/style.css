@@ -721,14 +721,23 @@ tbody tr:hover td { background: rgba(63,143,232,.04); }
 
 .footer-eu-bar { padding: 2rem 0; }
 .footer-eu-inner {
-  display: flex; align-items: flex-start; gap: 2rem; flex-wrap: wrap;
+  display: flex; flex-direction: column; gap: 1.25rem;
   background: rgba(255,255,255,.03);
   border: 1px solid rgba(255,255,255,.06);
   border-radius: var(--radius-lg); padding: 1.5rem 2rem;
 }
-.footer-eu-logos { display: flex; gap: 1.25rem; align-items: center; flex-shrink: 0; }
-.footer-eu-logos img { height: 40px; width: auto; }
-.footer-eu-text { font-size: .8rem; color: rgba(255,255,255,.4); line-height: 1.75; flex: 1; min-width: 220px; }
+/* IHI-mandated logos: official artwork is dark-on-transparent, so it sits on a white panel */
+.footer-eu-logos {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 1.25rem 2.5rem;
+  background: #fff; border-radius: var(--radius); padding: 1rem 1.5rem;
+}
+.footer-eu-logos picture { display: block; max-width: 100%; }
+.footer-eu-ihi { height: 60px; width: auto; }
+.footer-eu-partners { display: block; width: 760px; max-width: 100%; height: auto; }
+.footer-eu-text { font-size: .8rem; color: rgba(255,255,255,.55); line-height: 1.75; }
+.footer-eu-text p + p { margin-top: .6rem; }
+.footer-eu-disclaimer { color: rgba(255,255,255,.4); }
 .footer-eu-text strong { color: rgba(255,255,255,.7); }
 
 .footer-bottom {
@@ -816,7 +825,8 @@ tbody tr:hover td { background: rgba(63,143,232,.04); }
   .grid-3       { grid-template-columns: 1fr; }
   .ps-grid      { grid-template-columns: 1fr; }
   .footer-top   { grid-template-columns: 1fr; gap: 2rem; }
-  .footer-eu-inner { flex-direction: column; }
+  .footer-eu-inner { padding: 1.25rem; }
+  .footer-eu-partners { width: 380px; }
   .footer-bottom { justify-content: center; text-align: center; }
   .event-card   { flex-direction: column; gap: 1rem; }
 
